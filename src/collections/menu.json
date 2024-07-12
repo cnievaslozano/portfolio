@@ -8,11 +8,11 @@
 		"url": "/posts"
 	},
 	{
-		"name": "Projects",
-		"url": "/projects"
+		"name": "Proyectos",
+		"url": "/proyectos"
 	},
 	{
-		"name": "About",
-		"url": "/about"
+		"name": "Sobre mí",
+		"url": "/sobre-mi"
 	}
 ]

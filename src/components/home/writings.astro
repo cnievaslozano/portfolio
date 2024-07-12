@@ -9,11 +9,11 @@ const feed = "https://feed.miantiao.me/";
   <h2
     class="text-2xl font-bold leading-10 tracking-tight text-neutral-900 dark:text-neutral-100"
   >
-    My Writings
+    Blog
   </h2>
   <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
-    Along with coding I also like to write about life and technology. Here are
-    some of my recent posts.
+    Además de programar, también me gusta escribir posts de tecnología. Aquí están
+    algunas de mis publicaciones recientes.
   </p>
 
   <div class="w-full max-w-4xl mx-auto my-7 xl:px-0">
@@ -24,7 +24,7 @@ const feed = "https://feed.miantiao.me/";
         <PostsLoop count="3" />
 
         <div class="flex items-center justify-center w-full py-5">
-          <Button text="View All My Writing" link="/posts" />
+          <Button text="Ver todos mis Posts" link="/posts" />
         </div>
       </div>
       <div class="w-full mt-10 md:w-1/3 md:mt-0">
@@ -50,11 +50,11 @@ const feed = "https://feed.miantiao.me/";
             <h2
               class="flex text-sm font-semibold text-neutral-900 dark:text-neutral-100"
             >
-              Subscribe my blog
+              Suscríbete a mi blog
             </h2>
           </div>
           <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-            Get my blog updates via <a
+            Recibe las actualizaciones de mi blog a través de <a
               class="font-bold"
               href={`https://feedly.com/i/subscription/feed%2F${encodeURIComponent(feed)}`}
               >Feedly</a
@@ -62,7 +62,7 @@ const feed = "https://feed.miantiao.me/";
               class="font-bold"
               href={`https://www.inoreader.com/feed/${encodeURIComponent(feed)}`}
               >Inoreader</a
-            > or <a class="font-bold" href={feed}>RSS</a>.
+            > o <a class="font-bold" href={feed}>RSS</a>.
           </p>
           <div class="flex flex-col items-center w-full mt-4 space-y-3">
             <input
@@ -77,7 +77,7 @@ const feed = "https://feed.miantiao.me/";
             <button
               type="submit"
               class="block w-full px-4 py-2 mt-5 text-xs font-semibold text-center duration-300 ease-out border rounded bg-neutral-900 dark:bg-neutral-100 dark:hover:border-neutral-300 dark:text-neutral-800 dark:hover:bg-neutral-950 dark:hover:text-neutral-100 text-neutral-100 border-neutral-900 hover:bg-white hover:text-neutral-900"
-              >Subscribe</button
+              >Suscríbete</button
             >
           </div>
         </form>
