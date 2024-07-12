@@ -1,20 +1,75 @@
 [
 	{
-		"name": "Email.ML",
-		"description": "Minimalist temporary Email.",
+		"name": "LetterKafka",
+		"description": "Red Social inspirada en LetterBox, tématica libros.",
 		"image": "/assets/images/projects/email.ml.png",
-		"url": "https://email.ml"
+		"url": "https://github.com/cnievaslozano/letterkafka",
+		"technologies": [
+			{
+				"name": "Laravel",
+				"src": "/assets/images/projects/laravel.png"
+			},
+			{
+				"name": "Javascript",
+				"src": "/assets/images/projects/js.png"
+			},
+			{
+				"name": "Tailwind",
+				"src": "/assets/images/projects/tailwind.png"
+			},
+			{
+				"name": "MySql",
+				"src": "/assets/images/projects/mysql.png"
+			}
+		]
 	},
 	{
-		"name": "DNS.Surf",
-		"description": "Querying DNS Resolution Results in Different Regions Worldwide.",
+		"name": "Cook Fast",
+		"description": "Plataforma para crear y compartir recetas de cocina.",
 		"image": "/assets/images/projects/dns.surf.png",
-		"url": "https://dns.surf"
+		"url": "https://github.com/cnievaslozano/cookfast",
+		"technologies": [
+			{
+				"name": "React",
+				"src": "/assets/images/projects/react.png"
+			},
+			{
+				"name": "Express Js",
+				"src": "/assets/images/projects/expressjs.png"
+			},
+			{
+				"name": "MongoDB",
+				"src": "/assets/images/projects/mongodb.png"
+			},
+			{
+				"name": "NodeJs",
+				"src": "/assets/images/projects/nodejs.png"
+			}
+
+		]
 	},
 	{
-		"name": "HTML.ZONE",
-		"description": "Web Toolbox.",
+		"name": "Higher or Lower - SPOTIFY",
+		"description": "Versión inspirada en el juego 'Higher or Lower' pero centrada en artistas musicales de Spotify.",
 		"image": "/assets/images/projects/html.zone.png",
-		"url": "https://html.zone"
+		"url": "https://html.zone",
+		"technologies": [
+			{
+				"name": "Next",
+				"src": "/assets/images/projects/nextjs.png"
+			},
+			{
+				"name": "Api",
+				"src": "/assets/images/projects/api.png"
+			},
+			{
+				"name": "MongoDB",
+				"src": "/assets/images/projects/mongodb.png"
+			},
+			{
+				"name": "NodeJs",
+				"src": "/assets/images/projects/nodejs.png"
+			}
+		]
 	}
 ]

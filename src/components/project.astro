@@ -1,5 +1,5 @@
 ---
-const { name, description, url, image } = Astro.props;
+const { name, description, url, image, technologies } = Astro.props;
 ---
 
 <a
@@ -61,5 +61,16 @@ const { name, description, url, image } = Astro.props;
         >{description}</span
       >
     </span>
+    <!-- TECHNOLOGIES -->
+    <span class="flex space-x-2 my-2">
+      {technologies.map((technology) => (
+        <img
+          src={technology.src}
+          alt={technology.name}
+          class="h-8 w-8"
+        />
+      ))}
+    </span>
+    
   </span>
 </a>
