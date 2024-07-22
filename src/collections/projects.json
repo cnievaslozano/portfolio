@@ -2,7 +2,7 @@
 	{
 		"name": "LetterKafka",
 		"description": "Red Social inspirada en LetterBox, tématica libros.",
-		"image": "/assets/images/projects/email.ml.png",
+		"image": "/assets/images/projects/letterkafka.png",
 		"url": "https://github.com/cnievaslozano/letterkafka",
 		"technologies": [
 			{
@@ -24,26 +24,30 @@
 		]
 	},
 	{
-		"name": "Cook Fast",
-		"description": "Plataforma para crear y compartir recetas de cocina.",
-		"image": "/assets/images/projects/dns.surf.png",
-		"url": "https://github.com/cnievaslozano/cookfast",
+		"name": "MyProject",
+		"description": "CRM a medida para GRANOTA.NET, permite administrar briefings, incidencias y contenido.",
+		"image": "/assets/images/projects/myproject.png",
+		"url": "https://github.com/cnievaslozano/crm-myproject",
 		"technologies": [
 			{
-				"name": "React",
-				"src": "/assets/images/projects/react.png"
+				"name": "Php",
+				"src": "/assets/images/projects/php.png"
 			},
 			{
-				"name": "Express Js",
-				"src": "/assets/images/projects/expressjs.png"
+				"name": "Symfony",
+				"src": "/assets/images/projects/symfony.svg"
 			},
 			{
-				"name": "MongoDB",
-				"src": "/assets/images/projects/mongodb.png"
+				"name": "Javascript",
+				"src": "/assets/images/projects/js.png"
 			},
 			{
-				"name": "NodeJs",
-				"src": "/assets/images/projects/nodejs.png"
+				"name": "Bootstrap",
+				"src": "/assets/images/projects/bootstrap.svg"
+			},
+			{
+				"name": "Mysql",
+				"src": "/assets/images/projects/mysql.png"
 			}
 
 		]
@@ -52,7 +56,7 @@
 		"name": "Higher or Lower - SPOTIFY",
 		"description": "Versión inspirada en el juego 'Higher or Lower' pero centrada en artistas musicales de Spotify.",
 		"image": "/assets/images/projects/html.zone.png",
-		"url": "https://html.zone",
+		"url": "https://github.com/cnievaslozano/higher-or-lower-spoti",
 		"technologies": [
 			{
 				"name": "Next",
