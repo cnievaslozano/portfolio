@@ -1,0 +1,20 @@
+[
+	{
+		"dates": "Mayo 2024 · Agosto 2024",
+		"role": "Bootcamp Java SpringBoot & React",
+		"company": "Fundación Esplai ICT",
+		"logo": "/assets/images/education/fundacionEsplai.ico"
+	},
+	{
+		"dates": "Septiembre 2022 · Mayo 2024",
+		"role": "CFGS DAW - Desarrollo de Aplicaciones Web",
+		"company": "Instituto Baix Camp",
+		"logo": "/assets/images/education/insbaixcamp.ico"
+	},
+	{
+		"dates": "Septiembre 2020 · Mayo 2022",
+		"role": "CFGM SMR - Sistemas Microinformáticos y Redes",
+		"company": "Instituto Baix Camp",
+		"logo": "/assets/images/education/insbaixcamp.ico"
+	}
+]

@@ -1,5 +1,6 @@
 ---
 import experiences from "../collections/experiences.json";
+import education from "../collections/education.json";
 import AboutExperience from "../components/about-experience.astro";
 import PageHeading from "../components/page-heading.astro";
 import Layout from "../layouts/main.astro";
@@ -9,7 +10,7 @@ import Layout from "../layouts/main.astro";
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
     <PageHeading
       title="Sobre mí"
-      description="Soy desarrollador web júnior. Apasionado por aprender y enfrentar nuevos desafíos, combino creatividad y buenas prácticas en cada proyecto."
+      description="Desde pequeño, me ha interesado la tecnología, lo que me impulsa a estar en constante aprendizaje y búsqueda de nuevos desafíos. Tengo la capacidad de absorber conocimientos rápidamente, y la iniciativa necesaria para enfrentar nuevos proyectos."
     />
 
     <img src="/assets/images/about.jpg" class="relative z-30 w-full my-10 rounded-xl" />
@@ -48,6 +49,39 @@ import Layout from "../layouts/main.astro";
         })
       }
     </div>
+    <hr>
+    <h2
+    class="mt-2 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+  >
+    Formación
+  </h2>
+  <div class="px-5 py-10">
+    {
+      education.map((experience, loop) => {
+        return (
+          <>
+            {loop == 0 || loop == 1 ? (
+              <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
+                <AboutExperience
+                  dates={experience.dates}
+                  role={experience.role}
+                  company={experience.company}
+                  logo={experience.logo}
+                />
+              </div>
+            ) : (
+              <AboutExperience
+                dates={experience.dates}
+                role={experience.role}
+                company={experience.company}
+                logo={experience.logo}
+              />
+            )}
+          </>
+        )
+      })
+    }
+  </div>
 
     <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Conectemos</h2>
     <p
