@@ -4,15 +4,16 @@
 		"url": "/"
 	},
 	{
-		"name": "Posts",
-		"url": "/posts"
+		"name": "Sobre mí",
+		"url": "/sobre-mi"
 	},
 	{
 		"name": "Proyectos",
 		"url": "/proyectos"
 	},
 	{
-		"name": "Sobre mí",
-		"url": "/sobre-mi"
+		"name": "Posts",
+		"url": "/posts"
 	}
+
 ]
