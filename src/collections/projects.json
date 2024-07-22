@@ -49,30 +49,25 @@
 				"name": "Mysql",
 				"src": "/assets/images/projects/mysql.png"
 			}
-
 		]
 	},
 	{
-		"name": "Higher or Lower - SPOTIFY",
-		"description": "Versión inspirada en el juego 'Higher or Lower' pero centrada en artistas musicales de Spotify.",
-		"image": "/assets/images/projects/html.zone.png",
-		"url": "https://github.com/cnievaslozano/higher-or-lower-spoti",
+		"name": "StayHydrated",
+		"description": "Aplicación móvil para ayudar a los usuarios a registrar su ingesta diaria de agua y fomentar hábitos de hidratación saludables.",
+		"image": "/assets/images/projects/stayhydrated.png",
+		"url": "https://github.com/cnievaslozano/stay-hydrated",
 		"technologies": [
 			{
-				"name": "Next",
-				"src": "/assets/images/projects/nextjs.png"
+				"name": "Javascript",
+				"src": "/assets/images/projects/js.png"
 			},
 			{
-				"name": "Api",
-				"src": "/assets/images/projects/api.png"
+				"name": "React Native",
+				"src": "/assets/images/projects/react.png"
 			},
 			{
-				"name": "MongoDB",
-				"src": "/assets/images/projects/mongodb.png"
-			},
-			{
-				"name": "NodeJs",
-				"src": "/assets/images/projects/nodejs.png"
+				"name": "Expo",
+				"src": "/assets/images/projects/expo.png"
 			}
 		]
 	}
