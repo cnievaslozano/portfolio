@@ -5,15 +5,11 @@
 	},
 	{
 		"name": "Sobre mí",
-		"url": "/sobre-mi"
+		"url": "#sobre-mi"
 	},
 	{
 		"name": "Proyectos",
-		"url": "/proyectos"
-	},
-	{
-		"name": "Posts",
-		"url": "/posts"
+		"url": "#proyectos"
 	}
 
 ]

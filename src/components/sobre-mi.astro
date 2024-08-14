@@ -1,0 +1,108 @@
+---
+import experiences from "../collections/experiences.json";
+import education from "../collections/education.json";
+import certifications from "../collections/certifications.json";
+import AboutExperience from "../components/about-experience.astro";
+import PageHeading from "../components/page-heading.astro";
+---
+
+<section class="max-w-4xl mx-auto px-7 lg:px-0">
+  <PageHeading
+    title="Sobre mí"
+    description="Desde pequeño, me ha interesado la tecnología, lo que me impulsa a estar en constante aprendizaje y búsqueda de nuevos desafíos. Tengo la capacidad de absorber conocimientos rápidamente, y la iniciativa necesaria para enfrentar nuevos proyectos"
+  />
+
+  <h2
+    class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+  >
+    Experiencia
+  </h2>
+  <div class="px-5 py-10">
+    {
+      experiences.map((experience, loop) => {
+        return (
+          <>
+            {loop == 0 || loop == 1 ? (
+              <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
+                <AboutExperience
+                  dates={experience.dates}
+                  role={experience.role}
+                  company={experience.company}
+                  description={experience.description}
+                  logo={experience.logo}
+                />
+              </div>
+            ) : (
+              <AboutExperience
+                dates={experience.dates}
+                role={experience.role}
+                company={experience.company}
+                description={experience.description}
+                logo={experience.logo}
+              />
+            )}
+          </>
+        );
+      })
+    }
+  </div>
+  <hr />
+  <h2
+    class="mt-2 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+  >
+    Formación
+  </h2>
+  <div class="px-5 py-10">
+    {
+      education.map((education, loop) => {
+        return (
+          <>
+            {loop == 0 || loop == 1 ? (
+              <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
+                <AboutExperience
+                  dates={education.dates}
+                  role={education.role}
+                  company={education.company}
+                  logo={education.logo}
+                />
+              </div>
+            ) : (
+              <AboutExperience
+                dates={education.dates}
+                role={education.role}
+                company={education.company}
+                logo={education.logo}
+              />
+            )}
+          </>
+        );
+      })
+    }
+  </div>
+
+  <hr />
+  <h2
+    class="mt-2 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+  >
+    Certificados
+  </h2>
+  <div class="px-5 pt-10">
+    {
+      certifications.map((certification, loop) => {
+        return (
+          <>
+            <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
+              <AboutExperience
+                role={certification.certified}
+                company={certification.company}
+                logo={certification.logo}
+              />
+            </div>
+          </>
+        );
+      })
+    }
+  </div>
+
+
+</section>

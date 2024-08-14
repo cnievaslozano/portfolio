@@ -2,7 +2,7 @@
 import Button from "../components/button.astro";
 import Projects from "../components/home/projects.astro";
 import Separator from "../components/home/separator.astro";
-import Writings from "../components/home/writings.astro";
+import SobreMi from "../components/sobre-mi.astro";
 import Layout from "../layouts/main.astro";
 ---
 
@@ -18,7 +18,7 @@ import Layout from "../layouts/main.astro";
           Hola, soy Cristian David.
         </h1>
         <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
-          Desarrollador Web Fullstack de Reus, Tarragona <br>
+          Desarrollador Web Fullstack de Reus, Tarragona <br />
           Disponible para trabajar
         </p>
         <p class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">
@@ -35,11 +35,9 @@ import Layout from "../layouts/main.astro";
         </ul>
         <div class="flex flex-col">
           <div>
-            <Button text="Más sobre mí" link="/sobre-mi" />
+            <Button text="Más sobre mí" link="#sobre-mi" />
           </div>
-          <span
-            class="inline-flex space-x-5  sm:justify-start mt-14"
-          >
+          <span class="inline-flex space-x-5 sm:justify-start mt-14">
             <!-- LINKEDIN -->
             <a
               href="https://www.linkedin.com/in/cristian-david-nievas-lozano/"
@@ -148,10 +146,28 @@ import Layout from "../layouts/main.astro";
         </div>
       </div>
     </div>
-  </div>
 
-  <Separator text="proyectos" />
-  <Projects />
-  <Separator text="algunos de mis posts" />
-  <Writings />
+    <Separator text="sobre mí"  id="sobre-mi" />
+    <SobreMi />
+    <Separator text="proyectos" id="proyectos" />
+    <Projects />
+
+    <h2
+      class="mt-16 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    >
+      Conectemos
+    </h2>
+    <p
+      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
+    >
+      Si desea contactarme puede hacerlo en <a
+        href="https://www.linkedin.com/in/cnievaslozano/"
+        target="_blank"
+        class="text-indigo-600 underline">Linkedin</a
+      >, o me puedes enviar un <a
+        href="mailto:cnievaslozano@gmail.com"
+        class="text-indigo-600 underline">email</a
+      >.
+    </p>
+  </div>
 </Layout>
