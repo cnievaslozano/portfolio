@@ -1,0 +1,23 @@
+[
+	{
+		"certified": "AZ-900",
+		"company": "Microsoft Azure",
+		"logo": "/assets/images/certified/azure.ico"
+	},
+    {
+		"certified": "DP-900",
+		"company": "Microsoft Azure",
+		"logo": "/assets/images/certified/azure.ico"
+	},
+	{
+		"certified": "AI-900",
+		"company": "Microsoft Azure",
+		"logo": "/assets/images/certified/azure.ico"
+	},
+	{
+		"certified": "SC-900",
+		"company": "Microsoft Azure",
+		"logo": "/assets/images/certified/azure.ico"
+	}
+	
+]

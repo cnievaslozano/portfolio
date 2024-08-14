@@ -1,6 +1,7 @@
 ---
 import experiences from "../collections/experiences.json";
 import education from "../collections/education.json";
+import certifications from "../collections/certifications.json"
 import AboutExperience from "../components/about-experience.astro";
 import PageHeading from "../components/page-heading.astro";
 import Layout from "../layouts/main.astro";
@@ -57,24 +58,24 @@ import Layout from "../layouts/main.astro";
   </h2>
   <div class="px-5 py-10">
     {
-      education.map((experience, loop) => {
+      education.map((education, loop) => {
         return (
           <>
             {loop == 0 || loop == 1 ? (
               <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
                 <AboutExperience
-                  dates={experience.dates}
-                  role={experience.role}
-                  company={experience.company}
-                  logo={experience.logo}
+                  dates={education.dates}
+                  role={education.role}
+                  company={education.company}
+                  logo={education.logo}
                 />
               </div>
             ) : (
               <AboutExperience
-                dates={experience.dates}
-                role={experience.role}
-                company={experience.company}
-                logo={experience.logo}
+                dates={education.dates}
+                role={education.role}
+                company={education.company}
+                logo={education.logo}
               />
             )}
           </>
@@ -82,6 +83,30 @@ import Layout from "../layouts/main.astro";
       })
     }
   </div>
+
+  <hr>
+  <h2
+  class="mt-2 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+>
+  Certificados
+</h2>
+<div class="px-5 py-10">
+  {
+    certifications.map((certification, loop) => {
+      return (
+        <>
+            <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
+              <AboutExperience
+                role={certification.certified}
+                company={certification.company}
+                logo={certification.logo}
+              />
+            </div>
+        </>
+      )
+    })
+  }
+</div>
 
     <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Conectemos</h2>
     <p
