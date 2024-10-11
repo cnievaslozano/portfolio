@@ -1,5 +1,25 @@
 [
 	{
+		"name": "SukiBoutique",
+		"description": "Ecommerce de perfumes árabes, ropa y accesorios de moda.",
+		"image": "/assets/images/projects/suki.png",
+		"url": "https://sukiboutique.es",
+		"technologies": [
+			{
+				"name": "Wordpress",
+				"src": "/assets/images/projects/wordpress.png"
+			},
+			{
+				"name": "WooCommerce",
+				"src": "/assets/images/projects/woo.png"
+			},
+			{
+				"name": "Php",
+				"src": "/assets/images/projects/php.png"
+			}
+		]
+	},
+	{
 		"name": "ConectaCampo",
 		"description": "Proyecto Bootcamp, aplicación que reúne agricultores y sus clientes finales.",
 		"image": "/assets/images/projects/conectacampo.png",
