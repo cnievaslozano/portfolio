@@ -1,7 +1,7 @@
 ---
 import experiences from "../collections/experiences.json";
 import education from "../collections/education.json";
-import certifications from "../collections/certifications.json"
+import certifications from "../collections/certifications.json";
 import AboutExperience from "../components/about-experience.astro";
 import PageHeading from "../components/page-heading.astro";
 import Layout from "../layouts/main.astro";
@@ -14,7 +14,10 @@ import Layout from "../layouts/main.astro";
       description="Desde pequeño, me ha interesado la tecnología, lo que me impulsa a estar en constante aprendizaje y búsqueda de nuevos desafíos. Tengo la capacidad de absorber conocimientos rápidamente, y la iniciativa necesaria para enfrentar nuevos proyectos"
     />
 
-    <img src="/assets/images/about.jpg" class="relative z-30 w-full my-10 rounded-xl" />
+    <img
+      src="/assets/images/about.jpg"
+      class="relative z-30 w-full my-10 rounded-xl"
+    />
 
     <h2
       class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
@@ -46,78 +49,83 @@ import Layout from "../layouts/main.astro";
                 />
               )}
             </>
-          )
+          );
         })
       }
     </div>
-    <hr>
+    <hr />
     <h2
-    class="mt-2 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
-  >
-    Formación
-  </h2>
-  <div class="px-5 py-10">
-    {
-      education.map((education, loop) => {
-        return (
-          <>
-            {loop == 0 || loop == 1 ? (
-              <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
+      class="mt-2 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    >
+      Formación
+    </h2>
+    <div class="px-5 py-10">
+      {
+        education.map((education, loop) => {
+          return (
+            <>
+              {loop == 0 || loop == 1 ? (
+                <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
+                  <AboutExperience
+                    dates={education.dates}
+                    role={education.role}
+                    company={education.company}
+                    logo={education.logo}
+                  />
+                </div>
+              ) : (
                 <AboutExperience
                   dates={education.dates}
                   role={education.role}
                   company={education.company}
                   logo={education.logo}
                 />
+              )}
+            </>
+          );
+        })
+      }
+    </div>
+
+    <hr />
+    <h2
+      class="mt-2 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    >
+      Certificados
+    </h2>
+    <div class="px-5 py-10">
+      {
+        certifications.map((certification, loop) => {
+          return (
+            <>
+              <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
+                <AboutExperience
+                  role={certification.certified}
+                  company={certification.company}
+                  logo={certification.logo}
+                />
               </div>
-            ) : (
-              <AboutExperience
-                dates={education.dates}
-                role={education.role}
-                company={education.company}
-                logo={education.logo}
-              />
-            )}
-          </>
-        )
-      })
-    }
-  </div>
+            </>
+          );
+        })
+      }
+    </div>
 
-  <hr>
-  <h2
-  class="mt-2 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
->
-  Certificados
-</h2>
-<div class="px-5 py-10">
-  {
-    certifications.map((certification, loop) => {
-      return (
-        <>
-            <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
-              <AboutExperience
-                role={certification.certified}
-                company={certification.company}
-                logo={certification.logo}
-              />
-            </div>
-        </>
-      )
-    })
-  }
-</div>
-
-    <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Conectemos</h2>
+    <h2
+      class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    >
+      Conectemos
+    </h2>
     <p
       class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
     >
-    Si desea contactarme puede hacerlo en <a
-        href="https://www.linkedin.com/in/cnievaslozano/"
+      Si desea contactarme puede hacerlo en <a
+        href="https://www.linkedin.com/in/cristian-david-nievas-lozano/"
         target="_blank"
         class="text-indigo-600 underline">Linkedin</a
-      >, o me puedes enviar un <a href="mailto:cnievaslozano@gmail.com" class="text-indigo-600 underline"
-        >email</a
+      >, o me puedes enviar un <a
+        href="mailto:cnievaslozano@gmail.com"
+        class="text-indigo-600 underline">email</a
       >.
     </p>
   </section>
