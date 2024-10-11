@@ -1,10 +1,46 @@
 [
 	{
+		"name": "ConectaCampo",
+		"description": "Proyecto Bootcamp, aplicación que reúne agricultores y sus clientes finales.",
+		"image": "/assets/images/projects/conectacampo.png",
+		"url": "https://github.com/cnievaslozano/ConectaCampo",
+		"technologies": [
+			{
+				"name": "Java",
+				"src": "/assets/images/projects/java.png"
+			},
+			{
+				"name": "SpringBoot",
+				"src": "/assets/images/projects/springboot.png"
+			},
+			{
+				"name": "Javascript",
+				"src": "/assets/images/projects/js.png"
+			},
+			{
+				"name": "React",
+				"src": "/assets/images/projects/react.png"
+			},
+			{
+				"name": "Tailwind",
+				"src": "/assets/images/projects/tailwind.png"
+			},
+			{
+				"name": "MySql",
+				"src": "/assets/images/projects/mysql.png"
+			}
+		]
+	},
+	{
 		"name": "LetterKafka",
 		"description": "Red Social inspirada en LetterBox, tématica libros.",
 		"image": "/assets/images/projects/letterkafka.png",
 		"url": "https://github.com/cnievaslozano/letterkafka",
 		"technologies": [
+			{
+				"name": "Php",
+				"src": "/assets/images/projects/php.png"
+			},
 			{
 				"name": "Laravel",
 				"src": "/assets/images/projects/laravel.png"
@@ -53,7 +89,7 @@
 	},
 	{
 		"name": "StayHydrated",
-		"description": "Aplicación móvil para ayudar a los usuarios a registrar su ingesta diaria de agua y fomentar hábitos de hidratación saludables.",
+		"description": "Aplicación móvil para ayudar a los usuarios a registrar su ingesta diaria de agua.",
 		"image": "/assets/images/projects/stayhydrated.png",
 		"url": "https://github.com/cnievaslozano/stay-hydrated",
 		"technologies": [
@@ -68,6 +104,26 @@
 			{
 				"name": "Expo",
 				"src": "/assets/images/projects/expo.png"
+			}
+		]
+	},
+	{
+		"name": "MercaEsperanza (En Desarrollo)",
+		"description": "Ecommerce de supermercado halal y landing page.",
+		"image": "/assets/images/projects/mercaesperanza.png",
+		"url": "https://mercaesperanza.es/",
+		"technologies": [
+			{
+				"name": "Wordpress",
+				"src": "/assets/images/projects/wordpress.png"
+			},
+			{
+				"name": "WooCommerce",
+				"src": "/assets/images/projects/woo.png"
+			},
+			{
+				"name": "Php",
+				"src": "/assets/images/projects/php.png"
 			}
 		]
 	}
